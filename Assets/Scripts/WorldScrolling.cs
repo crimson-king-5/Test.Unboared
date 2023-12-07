@@ -25,58 +25,76 @@ public class WorldScrolling : MonoBehaviour
         playerTilePosition.x = (int)(playerTransform.position.x / tileSize);
         playerTilePosition.y = (int)(playerTransform.position.y / tileSize);
 
+        playerTilePosition.x -= playerTransform.position.x < 0 ? 1 : 0; 
+        playerTilePosition.y -= playerTransform.position.y < 0 ? 1 : 0; 
+
         if (currentTilePosition != playerTilePosition)
         {
             currentTilePosition = playerTilePosition;
 
-            UpdateOnTileGridPlayerPosition();
+            onTileGridPlayerPosition.x = CalculatePositionOnAxis(onTileGridPlayerPosition.x, true);
+            onTileGridPlayerPosition.y = CalculatePositionOnAxis(onTileGridPlayerPosition.y, true);
+
             UpdateTilesOnScreen();
         }
     }
 
     private void UpdateTilesOnScreen()
     {
-        for (int pov_x = 0; pov_x < fieldOfVisionWidth; pov_x++)
+        for (int pov_x = - (fieldOfVisionWidth/2); pov_x <= fieldOfVisionWidth/2; pov_x++)
         {
-            for (int pov_y = 0; pov_y < fieldOfVisionHeight; pov_y++)
+            for (int pov_y = - (fieldOfVisionHeight/2); pov_y <= fieldOfVisionHeight/2; pov_y++)
             {
-                
+                int tileUpdate_x = CalculatePositionOnAxis(playerTilePosition.x + pov_x, true);
+                int tileUpdate_y = CalculatePositionOnAxis(playerTilePosition.y + pov_y, false);
+
+                Debug.Log("tileToUpdate_x" + tileUpdate_x + "tileToUpdate_y" + tileUpdate_y);
+
+                GameObject tile = terrainTiles[tileUpdate_x, tileUpdate_y];
+                tile.transform.position = CalculatTilesPosition(
+                     playerTilePosition.x + pov_x,
+                     playerTilePosition.y + pov_y
+                     );
             }
         }
     }
 
-    private int UpdateOnTileGridPlayerPosition(int currentValue, bool horizontal)
+    private Vector3 CalculatTilesPosition(int x, int y)
+    {
+        return new Vector3(x * tileSize, y * tileSize, 0f);
+    }
+
+    private int CalculatePositionOnAxis(float currentValue, bool horizontal)
     {
         if (horizontal)
         {
-            
+            if(currentValue >= 0)
+            {
+                currentValue = currentValue % terrainTileHorizontalCount;
+            }
+            else
+            {
+                currentValue += 1;
+                currentValue = terrainTileHorizontalCount -1 + currentValue % terrainTileHorizontalCount;
+            }
         }
         else
         {
-            
-        }
-        if (onTileGridPlayerPosition.x >= 0)
-        {
-            onTileGridPlayerPosition.x = playerTilePosition.x % terrainTileHorizontalCount;
-        }
-        else
-        { 
-            onTileGridPlayerPosition.x = terrainTileHorizontalCount - 1 
-                                         + playerTilePosition.x % terrainTileHorizontalCount;
-            
+            if (currentValue >= 0)
+            {
+
+                currentValue = currentValue % terrainTileVerticalCount;
+            }
+            else
+            {
+                currentValue += 1;
+                currentValue = terrainTileVerticalCount - 1 + currentValue % terrainTileVerticalCount;
+            }
         }
 
-        if (onTileGridPlayerPosition.y > 0)
-        {
-            onTileGridPlayerPosition.y = playerTilePosition.y % terrainTileVerticalCount;
-        }
-        else
-        {
-            onTileGridPlayerPosition.y = terrainTileVerticalCount - 1 
-                                         + playerTilePosition.y % terrainTileVerticalCount;
-        }
-        
-       
+        return (int)currentValue;
+      
+  
 
     }
 
