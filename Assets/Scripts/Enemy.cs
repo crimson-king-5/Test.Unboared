@@ -4,20 +4,32 @@ using System.Collections.Generic;
 using UnityEditor.AssetImporters;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
-   [SerializeField] private Transform targetDestination;
+  
    [SerializeField] private float speed;
+   [SerializeField]  int hp = 999;
+   [SerializeField]  int damage = 1;
+   private Character targetCharacter;
    private GameObject targetGameobject;
-   
+   private Transform targetDestination;
    private Rigidbody2D rb2d;
-   [SerializeField] private int hp = 4;
+   
    private void Awake()
    {
       rb2d = GetComponent<Rigidbody2D>();
-      targetGameobject = targetDestination.gameObject;
+     
    }
 
+   public void SetTarget(GameObject target)
+   {
+      targetGameobject = target;
+      targetDestination = target.transform;
+
+
+
+   }
+   
    private void FixedUpdate()
    {
       Vector3 direction = (targetDestination.position - transform.position).normalized;
@@ -32,6 +44,17 @@ public class Enemy : MonoBehaviour
       }
    }
 
+  
+   private void Attack()
+   {
+      if (targetCharacter == null)
+      {
+         targetCharacter = targetGameobject.GetComponent<Character>();
+      }
+      
+      targetCharacter.TamkeDamage(damage);
+   }
+   
    public void TakeDamage(int damage)
    {
       hp -= damage;
@@ -40,9 +63,5 @@ public class Enemy : MonoBehaviour
          Destroy(gameObject);
       }
    }
-   
-   private void Attack()
-   {
-    // Debug.Log("Attacking player");
-   }
+
 }
