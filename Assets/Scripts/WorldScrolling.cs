@@ -33,7 +33,7 @@ public class WorldScrolling : MonoBehaviour
             currentTilePosition = playerTilePosition;
 
             onTileGridPlayerPosition.x = CalculatePositionOnAxis(onTileGridPlayerPosition.x, true);
-            onTileGridPlayerPosition.y = CalculatePositionOnAxis(onTileGridPlayerPosition.y, true);
+            onTileGridPlayerPosition.y = CalculatePositionOnAxis(onTileGridPlayerPosition.y, false);
 
             UpdateTilesOnScreen();
         }
@@ -75,7 +75,7 @@ public class WorldScrolling : MonoBehaviour
             else
             {
                 currentValue += 1;
-                currentValue = terrainTileHorizontalCount -1 + currentValue % terrainTileHorizontalCount;
+                currentValue = terrainTileHorizontalCount - 1 + currentValue % terrainTileHorizontalCount;
             }
         }
         else
