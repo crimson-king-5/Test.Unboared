@@ -7,8 +7,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rgbd2d;
-    private Vector3 movmentVector;
-
+    [HideInInspector]
+    public Vector3 movmentVector;
+    [HideInInspector]
+    public float lastHorizontalVector;
+    [HideInInspector]
+    public float lastVerticalVector;
+    
     [SerializeField] private float speed = 3f;
 
     private Animate animate;
@@ -25,6 +30,16 @@ public class PlayerMovement : MonoBehaviour
     {
         movmentVector.x = Input.GetAxisRaw("Horizontal");
         movmentVector.y = Input.GetAxisRaw("Vertical");
+
+        if (movmentVector.x != 0)
+        {
+            lastHorizontalVector = movmentVector.x;
+        }
+
+        if (movmentVector.y != 0 )
+        {
+            lastVerticalVector = movmentVector.y;
+        }
         
         animate.horizontal = movmentVector.x;
         
