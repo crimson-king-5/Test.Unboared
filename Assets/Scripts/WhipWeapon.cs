@@ -28,7 +28,7 @@ public class WhipWeapon : MonoBehaviour
             Attack();
         }
     }
-
+   
     // ReSharper disable Unity.PerformanceAnalysis
     private void Attack()
     {
