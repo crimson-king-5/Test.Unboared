@@ -9,6 +9,14 @@ public class Character : MonoBehaviour
    public int currentHp = 1000;
    [SerializeField] private StatusBar hpBar;
 
+   [HideInInspector] public Level level;
+   [HideInInspector] public Coins coins;
+   private void Awake()
+   {
+      level = GetComponent<Level>();
+      coins = GetComponent<Coins>();
+   }
+
    private void Start()
    {
       hpBar.SetState(currentHp, maxHp);

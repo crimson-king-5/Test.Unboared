@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3805899577970523643}
   - component: {fileID: 556330816070668547}
   - component: {fileID: 4881187765681330624}
+  - component: {fileID: 7890594384631478707}
+  - component: {fileID: 5322135999454332818}
   m_Layer: 0
   m_Name: health pickup
   m_TagString: Untagged
@@ -98,7 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7fc23850300b894b875b1bb97837749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 200
 --- !u!58 &4881187765681330624
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,3 +135,28 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.07
+--- !u!114 &7890594384631478707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580946016339295740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9faca4d21750c724e83ab2902ddd722b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healtAmount: 200
+--- !u!114 &5322135999454332818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580946016339295740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2da664a8b6ff304e9e858b2ddcd98ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

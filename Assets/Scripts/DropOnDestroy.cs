@@ -7,13 +7,24 @@ using Random = UnityEngine.Random;
 
 public class DropOnDestroy : MonoBehaviour
 {
-   [SerializeField] private GameObject healthPickUp;
+   [SerializeField] private GameObject dropItemPrefab;
    [SerializeField][Range(0f,1f)] private  float chance = 1f;
+
+   private bool isQuitting = false;
+   private void OnApplicationQuit()
+   {
+      isQuitting = true;
+   }
+
    private void OnDestroy()
    {
+      if (isQuitting)
+      {
+         return;
+      }
       if (Random.value < chance)
       {
-         Transform t = Instantiate(healthPickUp).transform;
+         Transform t = Instantiate(dropItemPrefab).transform;
          t.position = transform.position;
       }
      

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2220510830109212328}
   - component: {fileID: 2168371287960672877}
   - component: {fileID: 3527259447146466063}
+  - component: {fileID: 8848013828122323701}
+  - component: {fileID: 7072608982667933447}
   m_Layer: 0
   m_Name: BatEnemy
   m_TagString: Untagged
@@ -196,3 +198,30 @@ MonoBehaviour:
   speed: 1
   hp: 1
   damage: 1
+  experience_reward: 400
+--- !u!114 &8848013828122323701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270367038464320953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932483515ff2fa047aa1d5673784f99b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItemPrefab: {fileID: 6647818353720521496, guid: 759575bafd7eb254f8ea2d9d9629ba71, type: 3}
+  chance: 0.15
+--- !u!114 &7072608982667933447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270367038464320953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2da664a8b6ff304e9e858b2ddcd98ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

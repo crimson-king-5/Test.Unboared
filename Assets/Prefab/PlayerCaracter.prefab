@@ -328,7 +328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8250352946226583731
 Transform:
   m_ObjectHideFlags: 0
@@ -377,6 +377,8 @@ GameObject:
   - component: {fileID: 5529020908136548199}
   - component: {fileID: 6740045362134214436}
   - component: {fileID: 6990641020142370231}
+  - component: {fileID: 7080622438139553229}
+  - component: {fileID: 5283442215437984946}
   m_Layer: 0
   m_Name: PlayerCaracter
   m_TagString: Untagged
@@ -516,8 +518,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 1000
-  currentHp: 1000
+  currentHp: 500
   hpBar: {fileID: 7686855158440796715}
+  level: {fileID: 0}
+--- !u!114 &7080622438139553229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308201829274686885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0694ab97d0c05de4299d1d8e0a53cfa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experienceBar: {fileID: 0}
+--- !u!114 &5283442215437984946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308201829274686885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088662809f9d6ec4dbc7cc1da5593ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinAcquired: 0
 --- !u!1 &7669051121333639138
 GameObject:
   m_ObjectHideFlags: 0
