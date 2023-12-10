@@ -27,6 +27,7 @@ public class ThrowingKnifeWeapon : MonoBehaviour
       SpawnKnife();
    }
 
+   // ReSharper disable Unity.PerformanceAnalysis
    private void SpawnKnife()
    {
       GameObject throwKnife = Instantiate(knifePrefab);

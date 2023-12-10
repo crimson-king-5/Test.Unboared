@@ -15,7 +15,7 @@ public class TerrainTile : MonoBehaviour
     void Start()
     {
         GetComponentInParent<WorldScrolling>().Add(gameObject, tilePosition);
-        transform.position = new Vector3(-100, -100, 0);
+        //transform.position = new Vector3(0, 0, 0);
     }
 
     public void Spawn()

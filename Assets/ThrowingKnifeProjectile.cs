@@ -5,12 +5,17 @@ using UnityEngine;
 
 public class ThrowingKnifeProjectile : MonoBehaviour
 {
-    private Vector3 direction;
+    private Vector3 _direction;
     [SerializeField] private float speed;
 
+    
+    private void Update()
+    {
+        transform.position += _direction * (speed * Time.deltaTime);
+    }
     public void SetDirection(float dir_x, float dir_y)
     {
-        direction = new Vector3(dir_x, dir_y);
+        _direction = new Vector3(dir_x, dir_y);
 
         if (dir_x < 0)
         {
@@ -20,8 +25,5 @@ public class ThrowingKnifeProjectile : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        transform.position += direction * speed * Time.deltaTime;
-    }
+    
 }

@@ -363,6 +363,52 @@ MonoBehaviour:
   timeToAttack: 1.5
   whipAttackSize: {x: 4, y: 2}
   whipDamage: 1
+--- !u!1 &5397338525676725739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647986503182466456}
+  - component: {fileID: 7994520039275159318}
+  m_Layer: 0
+  m_Name: WPN_Knife
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &647986503182466456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5397338525676725739}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1256897137631852357}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7994520039275159318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5397338525676725739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0691c0e2d261744d9970b04be77db69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToAttack: 1.5
+  knifePrefab: {fileID: 5010007313209088713, guid: e7dc2211f6310dc40b3a6afd42dd3df9, type: 3}
 --- !u!1 &7308201829274686885
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +448,7 @@ Transform:
   - {fileID: 4731593895022993090}
   - {fileID: 3156974947647779510}
   - {fileID: 8250352946226583731}
+  - {fileID: 647986503182466456}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3857281544742338568
@@ -521,6 +568,7 @@ MonoBehaviour:
   currentHp: 500
   hpBar: {fileID: 7686855158440796715}
   level: {fileID: 0}
+  coins: {fileID: 0}
 --- !u!114 &7080622438139553229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,6 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinAcquired: 0
+  coinsCountText: {fileID: 0}
 --- !u!1 &7669051121333639138
 GameObject:
   m_ObjectHideFlags: 0
