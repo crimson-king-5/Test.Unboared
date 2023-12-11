@@ -9,8 +9,8 @@ public class Character : MonoBehaviour
    public int maxHp = 1000;
    public int currentHp = 1000;
    public int armor = 0;
+   private bool isDead = false;
    [SerializeField] private StatusBar hpBar;
-
    [HideInInspector] public Level level;
    [HideInInspector] public Coins coins;
    private void Awake()
@@ -26,12 +26,15 @@ public class Character : MonoBehaviour
 
    public void TamkeDamage(int damage)
    {
+        if(isDead == true) { return; }
       ApplyAmrmor(ref damage);
       
       currentHp -= damage;
       if (currentHp <= 0)
       {
-         Debug.Log("PlayerDead");
+            GetComponent<PlayerGameOver>().GameOver();
+            isDead = true;
+        
       }
       hpBar.SetState(currentHp, maxHp);
    }
