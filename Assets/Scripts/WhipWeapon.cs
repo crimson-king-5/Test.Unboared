@@ -2,50 +2,40 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class WhipWeapon : MonoBehaviour
+public class WhipWeapon : WeaponBase
 {
     
     [SerializeField] private GameObject leftWhipObject;
     [SerializeField] private GameObject rightWhipObject;
-
-    [SerializeField]  private float timeToAttack = 4f;
-    private float timer;
     private PlayerMovement playerMove;
-    [SerializeField] Vector2 whipAttackSize = new Vector2(4f, 2f);
-    [SerializeField] private int whipDamage = 1;
+    [FormerlySerializedAs("whipAttackSize")] [SerializeField] Vector2 attackSize = new Vector2(4f, 2f);
+   
     private void Awake()
     {
         playerMove = GetComponentInParent<PlayerMovement>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        timer -= Time.deltaTime;
-        if (timer < 0f)
-        {
-            Attack();
-        }
-    }
+
    
     // ReSharper disable Unity.PerformanceAnalysis
-    private void Attack()
+    public override void Attack()
     {
-       
-        timer = timeToAttack;
         if (playerMove.lastHorizontalVector > 0)
         {
             rightWhipObject.SetActive(true);
-            Collider2D[] colliders = Physics2D.OverlapBoxAll(rightWhipObject.transform.position, whipAttackSize, 0f);
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(rightWhipObject.transform.position, attackSize, 0f);
             ApplyDamage(colliders);
         }
         else
         {
             leftWhipObject.SetActive(true);
-            Collider2D[] colliders = Physics2D.OverlapBoxAll(leftWhipObject.transform.position, whipAttackSize, 0f);
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(leftWhipObject.transform.position, attackSize, 0f);
             ApplyDamage(colliders);
         }
+       
     }
 
     private void ApplyDamage(Collider2D[] colliders)
@@ -55,7 +45,8 @@ public class WhipWeapon : MonoBehaviour
             IDamageable e = colliders[i].GetComponent<IDamageable>();
             if (e != null)
             {
-               e.TakeDamage(whipDamage);
+                PostDamage(weaponStats.damage, colliders[i].transform.position);
+               e.TakeDamage(weaponStats.damage);
             }
            
         }

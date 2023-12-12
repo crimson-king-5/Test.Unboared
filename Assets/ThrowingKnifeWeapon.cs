@@ -3,35 +3,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrowingKnifeWeapon : MonoBehaviour
+public class ThrowingKnifeWeapon : WeaponBase
 {
-   [SerializeField] private float timeToAttack; 
+   
    [SerializeField] private GameObject knifePrefab;
-   private float timer;
+   [SerializeField] private float spread = 0.5f;
    private PlayerMovement playerMove;
 
    private void Awake()
    {
       playerMove = GetComponent<PlayerMovement>();
    }
-
-   private void Update()
+   
+   public override void Attack()
    {
-      if (timer < timeToAttack)
+      
+
+      for (int i = 0; i < weaponStats.numberOfAttacks; i++)
       {
-         timer += Time.deltaTime;
-         return;
+         GameObject throwKnife = Instantiate(knifePrefab);
+
+         Vector3 newKnifePosition = transform.position;
+         if (weaponStats.numberOfAttacks > 1)
+         {
+            newKnifePosition.y -= (spread * (weaponStats.numberOfAttacks -1)) / 2;
+            newKnifePosition.y += i * spread;
+         }
+         
+
+         throwKnife.transform.position = newKnifePosition;
+         
+         ThrowingKnifeProjectile throwingKnifeProjectile = throwKnife.GetComponent<ThrowingKnifeProjectile>();
+         throwingKnifeProjectile.SetDirection(
+            playerMove.lastHorizontalVector,
+            0f);
+         throwingKnifeProjectile.damage = weaponStats.damage;
       }
-
-      timer = 0;
-      SpawnKnife();
+      
+    
    }
-
-   // ReSharper disable Unity.PerformanceAnalysis
-   private void SpawnKnife()
-   {
-      GameObject throwKnife = Instantiate(knifePrefab);
-      throwKnife.transform.position = transform.position;
-      throwKnife.GetComponent<ThrowingKnifeProjectile>().SetDirection(playerMove.lastHorizontalVector,0f);
-   }
+   
 }
