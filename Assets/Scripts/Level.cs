@@ -15,11 +15,13 @@ public class Level : MonoBehaviour
    private List<UpgradeData> selectedUpgrades;
    
    [SerializeField] private List<UpgradeData> acquiredUpgrades;
-
+   private PassiveItems passiveItems;
+   [SerializeField] private List<UpgradeData> upgradesAvailableOnStart;
 
    private void Awake()
    {
       weaponManager = GetComponent<WeaponManager>();
+      passiveItems = GetComponent<PassiveItems>();
    }
 
    int To_Level_Up
@@ -34,6 +36,7 @@ public class Level : MonoBehaviour
    {
       experienceBar.UpdateExperienceSlider(experience, To_Level_Up);
       experienceBar.SetLevelText(level);
+      AddUpgradesIntoTheListOfAvailableUpgrades(upgradesAvailableOnStart);
    }
 
    public void AddExperience(int amount)
@@ -93,11 +96,14 @@ public class Level : MonoBehaviour
              weaponManager.UpgradeWeapon(upgradeData);
              break;
           case UpgradeType.ItemUpgrade:
+             passiveItems.UpgradeItem(upgradeData);
              break;
           case UpgradeType.WeaponUnlock:
              weaponManager.AddWeapon(upgradeData.weaponData);
              break;
           case UpgradeType.ItemUnlockn:
+             passiveItems.Equip(upgradeData.item);
+             AddUpgradesIntoTheListOfAvailableUpgrades(upgradeData.item.upgrades);
              break;
           default:
              throw new ArgumentOutOfRangeException();
@@ -108,6 +114,7 @@ public class Level : MonoBehaviour
 
     public void AddUpgradesIntoTheListOfAvailableUpgrades(List<UpgradeData> upgradesToAdd)
     {
+       if(upgradesToAdd == null){return;}
        this.upgrades.AddRange(upgradesToAdd);
        
     }

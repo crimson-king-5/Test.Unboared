@@ -26,12 +26,27 @@ public class PassiveItems : MonoBehaviour
         {
             items = new List<Item>();
         }
-        items.Add(itemToEquip);
-        itemToEquip.Equip(character);
+
+        Item newItemInstance = new Item();
+        newItemInstance.Init(itemToEquip.Name);
+        newItemInstance.Stats.Sum(itemToEquip.Stats);
+       
+        
+        
+        items.Add(newItemInstance);
+        newItemInstance.Equip(character);
     }
 
     public void UnEquip(Item itemToUnEquip)
     {
         
+    }
+
+    internal void UpgradeItem(UpgradeData upgradeData)
+    {
+        Item itemToUpgrade = items.Find(id => id.Name == upgradeData.item.Name);
+        itemToUpgrade.UnEquip(character);
+        itemToUpgrade.Stats.Sum(upgradeData.itemStats);
+        itemToUpgrade.Equip(character);
     }
 }
