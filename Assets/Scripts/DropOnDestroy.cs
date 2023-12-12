@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class DropOnDestroy : MonoBehaviour
 {
-   [SerializeField] private GameObject dropItemPrefab;
+   [SerializeField] List <GameObject> dropItemPrefab;
    [SerializeField][Range(0f,1f)] private  float chance = 1f;
 
    private bool isQuitting = false;
@@ -24,7 +24,8 @@ public class DropOnDestroy : MonoBehaviour
       }
       if (Random.value < chance)
       {
-         Transform t = Instantiate(dropItemPrefab).transform;
+        GameObject toDrop = dropItemPrefab[Random.Range(0, dropItemPrefab.Count)];
+         Transform t = Instantiate(toDrop).transform;
          t.position = transform.position;
       }
      

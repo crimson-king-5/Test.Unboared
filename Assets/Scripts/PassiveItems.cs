@@ -7,7 +7,7 @@ public class PassiveItems : MonoBehaviour
 {
     private Character character;
     [SerializeField] private List<Item> items;
-    [SerializeField] private Item armorTest;
+    
 
 
     private void Awake()
@@ -17,7 +17,7 @@ public class PassiveItems : MonoBehaviour
 
     private void Start()
     {
-        Equip(armorTest);
+       
     }
 
     public void Equip(Item itemToEquip)

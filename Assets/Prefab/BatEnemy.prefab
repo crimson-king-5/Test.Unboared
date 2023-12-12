@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3527259447146466063}
   - component: {fileID: 8848013828122323701}
   - component: {fileID: 7072608982667933447}
+  - component: {fileID: -3217769781771220115}
   m_Layer: 0
   m_Name: BatEnemy
   m_TagString: Untagged
@@ -211,7 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932483515ff2fa047aa1d5673784f99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropItemPrefab: {fileID: 6647818353720521496, guid: 759575bafd7eb254f8ea2d9d9629ba71, type: 3}
+  dropItemPrefab:
+  - {fileID: 6647818353720521496, guid: 759575bafd7eb254f8ea2d9d9629ba71, type: 3}
+  - {fileID: 4951449411048808601, guid: 7eebbedff840acb41914b73bbe83346f, type: 3}
   chance: 0.15
 --- !u!114 &7072608982667933447
 MonoBehaviour:
@@ -223,5 +226,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2da664a8b6ff304e9e858b2ddcd98ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3217769781771220115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270367038464320953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351382e92862b2a478243b663969fa62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -23,7 +23,7 @@ public class WhipWeapon : WeaponBase
     // ReSharper disable Unity.PerformanceAnalysis
     public override void Attack()
     {
-        if (playerMove.lastHorizontalVector > 0)
+      /*  if (playerMove.lastHorizontalVector > 0)
         {
             rightWhipObject.SetActive(true);
             Collider2D[] colliders = Physics2D.OverlapBoxAll(rightWhipObject.transform.position, attackSize, 0f);
@@ -34,8 +34,8 @@ public class WhipWeapon : WeaponBase
             leftWhipObject.SetActive(true);
             Collider2D[] colliders = Physics2D.OverlapBoxAll(leftWhipObject.transform.position, attackSize, 0f);
             ApplyDamage(colliders);
-        }
-       
+        }*/
+       StartCoroutine(AttackProcess());
     }
 
     private void ApplyDamage(Collider2D[] colliders)
@@ -51,4 +51,26 @@ public class WhipWeapon : WeaponBase
            
         }
     }
+
+    IEnumerator AttackProcess()
+    {
+
+        for(int i = 0; i < weaponStats.numberOfAttacks; i++)
+        {
+            if (playerMove.lastHorizontalVector > 0)
+            {
+                rightWhipObject.SetActive(true);
+                Collider2D[] colliders = Physics2D.OverlapBoxAll(rightWhipObject.transform.position, attackSize, 0f);
+                ApplyDamage(colliders);
+            }
+            else
+            {
+                leftWhipObject.SetActive(true);
+                Collider2D[] colliders = Physics2D.OverlapBoxAll(leftWhipObject.transform.position, attackSize, 0f);
+                ApplyDamage(colliders);
+            }
+        }
+        yield return new WaitForSeconds(0.3f);
+    }
+
 }
