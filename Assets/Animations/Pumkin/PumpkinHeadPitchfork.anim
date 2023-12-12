@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerMovementRight
+  m_Name: PumpkinHeadPitchfork
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2089996188, guid: 3b371ab968de5804790f16a84d96005c, type: 3}
-    - time: 0.25
-      value: {fileID: 230101269, guid: 3b371ab968de5804790f16a84d96005c, type: 3}
-    - time: 0.5
-      value: {fileID: 196848866, guid: 3b371ab968de5804790f16a84d96005c, type: 3}
+      value: {fileID: -666864461, guid: 133a019f93c997e468fd7b245a0b3353, type: 3}
+    - time: 0.083333336
+      value: {fileID: -1627562750, guid: 133a019f93c997e468fd7b245a0b3353, type: 3}
+    - time: 0.16666667
+      value: {fileID: 1095659125, guid: 133a019f93c997e468fd7b245a0b3353, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2089996188, guid: 3b371ab968de5804790f16a84d96005c, type: 3}
-    - {fileID: 230101269, guid: 3b371ab968de5804790f16a84d96005c, type: 3}
-    - {fileID: 196848866, guid: 3b371ab968de5804790f16a84d96005c, type: 3}
+    - {fileID: -666864461, guid: 133a019f93c997e468fd7b245a0b3353, type: 3}
+    - {fileID: -1627562750, guid: 133a019f93c997e468fd7b245a0b3353, type: 3}
+    - {fileID: 1095659125, guid: 133a019f93c997e468fd7b245a0b3353, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5833333
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

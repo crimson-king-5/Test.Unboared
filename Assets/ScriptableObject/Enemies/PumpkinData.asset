@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9923b13e87676f84fadf7feea114a821, type: 3}
-  m_Name: Armor
+  m_Script: {fileID: 11500000, guid: af46b584c8c54224a86b7440abce9eb6, type: 3}
+  m_Name: PumpkinData
   m_EditorClassIdentifier: 
-  Name: Armor
-  Stats:
-    armor: 135
-  upgrades:
-  - {fileID: 11400000, guid: 0ef6043bd01f71249a55c23d76a692a5, type: 2}
+  Name: PumpkinHead
+  animatedPrefab: {fileID: 4431732292729405813, guid: a8cd3cf039b9f2541909bb766108d8b3, type: 3}
+  stats:
+    hp: 10
+    damage: 1
+    experience_reward: 400
+    moveSpeed: 1

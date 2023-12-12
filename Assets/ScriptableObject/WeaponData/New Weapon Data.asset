@@ -9,11 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9923b13e87676f84fadf7feea114a821, type: 3}
-  m_Name: Armor
+  m_Script: {fileID: 11500000, guid: 424bf0f19c68ea3488626a067a1e53d4, type: 3}
+  m_Name: New Weapon Data
   m_EditorClassIdentifier: 
-  Name: Armor
-  Stats:
-    armor: 135
+  Name: 
+  stats:
+    damage: 0
+    timeToAttack: 0
+    numberOfAttacks: 0
+  weaponBasePrefab: {fileID: 0}
   upgrades:
-  - {fileID: 11400000, guid: 0ef6043bd01f71249a55c23d76a692a5, type: 2}
+  - {fileID: 0}

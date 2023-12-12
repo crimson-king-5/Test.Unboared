@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9923b13e87676f84fadf7feea114a821, type: 3}
-  m_Name: Armor
+  m_Script: {fileID: 11500000, guid: af46b584c8c54224a86b7440abce9eb6, type: 3}
+  m_Name: New Enemy Data
   m_EditorClassIdentifier: 
-  Name: Armor
-  Stats:
-    armor: 135
-  upgrades:
-  - {fileID: 11400000, guid: 0ef6043bd01f71249a55c23d76a692a5, type: 2}
+  Name: bat
+  animatedPrefab: {fileID: 7601518564740702701, guid: 8b35d46f75935354b98de6b043a5d5f3, type: 3}
+  stats:
+    hp: 10
+    damage: 2
+    experience_reward: 100
+    moveSpeed: 9

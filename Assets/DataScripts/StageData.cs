@@ -4,13 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
+public enum StageEventType
+{
+    SpawnEnemy,
+    SpawnObject,
+    Winstage
+}
 [Serializable]
 public class StagerEvent
 {
-    public float time;
+    public StageEventType eventType;
+    public int time;
     public string message;
-    public Enemy enemyToSpawn;
+    
+    public EnemyData enemyToSpawn;
+    public GameObject objectToSpawn;
     public int count;
 }
 

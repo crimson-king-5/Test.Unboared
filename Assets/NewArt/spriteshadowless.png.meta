@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 133a019f93c997e468fd7b245a0b3353
+guid: 3b371ab968de5804790f16a84d96005c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pumpkinhead-alpha_33
+      name: spriteshadowless_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 16
-        height: 16
+        y: 135
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 958a0eb82babe0a4db178d7dcaf1d69e
-      internalID: 284131154
+      spriteID: 2caca21c0c16231428168e985ae81275
+      internalID: -684701131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_34
+      name: spriteshadowless_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
+        x: 30
+        y: 135
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584f42985eee7924bb30eee41751d7fe
-      internalID: -48491822
+      spriteID: 65172055e97325445a292064e1bf30f4
+      internalID: 2065334207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_35
+      name: spriteshadowless_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
+        x: 60
+        y: 135
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f3c209f3c143cd4083f0cea6572873a
-      internalID: -1818494701
+      spriteID: 6e2f630da4dc0b84287afc25c4093fea
+      internalID: -58313390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_36
+      name: spriteshadowless_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
+        x: 90
+        y: 135
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0873c930919c42c4fb554cbc10707b64
-      internalID: -666864461
+      spriteID: 7bedcfa51cc2f1545badfba29b463f67
+      internalID: -785716238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_37
+      name: spriteshadowless_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
+        x: 120
+        y: 135
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c25c6ab650befa41b66281b9632bd24
-      internalID: -1627562750
+      spriteID: 8e08661b05c40e5409a84b607240b55c
+      internalID: -208041425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_38
+      name: spriteshadowless_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 48
-        width: 16
-        height: 16
+        x: 150
+        y: 135
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,146 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 047543ee58bf7f04f93623993f55d102
-      internalID: 1095659125
+      spriteID: fef579adc8786ed4c8994db4fda95baf
+      internalID: -29707780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_42
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97c10aad45c3fa445be5076d71b81563
-      internalID: -801634945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pumpkinhead-alpha_43
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b2a30058f3742c4a9263ffa2f04b4fe
-      internalID: -2027185263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pumpkinhead-alpha_44
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6de8b4a5f80d28c429df79a01b333bf3
-      internalID: 629039602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pumpkinhead-alpha_45
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbc3448c1ef79fe448ba42f6cccf7d74
-      internalID: -491387238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pumpkinhead-alpha_46
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba58de6d517e5324f9582e80201018a4
-      internalID: 1070146827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pumpkinhead-alpha_47
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfdbf036152d54e499ce9ca7bd7051be
-      internalID: -145801370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pumpkinhead-alpha_51
+      name: spriteshadowless_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 90
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9082d7f1282614cb859c683af11176
-      internalID: 710224658
+      spriteID: 45b5b0c616e1a414981c691fb91d3fdb
+      internalID: -441556653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_52
+      name: spriteshadowless_7
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 30
+        y: 90
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a805420e2e7d7242b65d494cd65f60f
-      internalID: -2093565465
+      spriteID: 5c3d925f88614ee4087adbc646772c61
+      internalID: -1634202091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_53
+      name: spriteshadowless_8
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
+        x: 60
+        y: 90
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 345cd65d1988e2d499f9ddfa101a23ab
-      internalID: 162543034
+      spriteID: 504b441447711774b919a22dfde09424
+      internalID: 1262746877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_54
+      name: spriteshadowless_9
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
+        x: 90
+        y: 90
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a0055a29a92d54cae8061012d0dce6
-      internalID: -535298866
+      spriteID: 71cd212f00675304691f83f3766b9628
+      internalID: -1818818686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_55
+      name: spriteshadowless_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
+        x: 120
+        y: 90
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a41c2bf9f6fd2e54da23f1617a5c1b62
-      internalID: 1490903603
+      spriteID: 2cfe8776928ef3141af27a7986e05846
+      internalID: 1105652886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_56
+      name: spriteshadowless_11
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
+        x: 150
+        y: 90
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,20 +355,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4fe3b738e2b37b41b50f8aa7a575f31
-      internalID: 1796243755
+      spriteID: 106c87d8237e47f4f9b6010dc473a407
+      internalID: -1672847632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_60
+      name: spriteshadowless_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95812447b6163fa40b70941ca880aa8d
+      internalID: -2089996188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshadowless_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 45
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a84609bc8f8a147898b7c5158c9701
+      internalID: 230101269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshadowless_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 45
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b5d52c8893f8d43af4c804ff65c126
+      internalID: 196848866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshadowless_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 45
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3713a596dc961d41899c8083e5b81bd
+      internalID: -1435543303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshadowless_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 45
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552f3ce79afcb3240a8e8bfe58f573ca
+      internalID: -1283623203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshadowless_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 45
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552d141f1a822cf4f83e5b2fe2788bec
+      internalID: -1533833827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshadowless_18
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,20 +502,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5df028546edb7d94487aad7438773b69
-      internalID: -1632517888
+      spriteID: 14fb26cadfa88ca4b8688f20fe50588a
+      internalID: 1689977808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_61
+      name: spriteshadowless_19
       rect:
         serializedVersion: 2
-        x: 16
+        x: 30
         y: 0
-        width: 16
-        height: 16
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,20 +523,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73dfa44ef1a9cc4a95f68be7f07939d
-      internalID: -1435840740
+      spriteID: dc84f3878b4922f48b83030b54d90f2b
+      internalID: -2003481052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_62
+      name: spriteshadowless_20
       rect:
         serializedVersion: 2
-        x: 32
+        x: 60
         y: 0
-        width: 16
-        height: 16
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,20 +544,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fb6ed8b2008b0e468993dcc4b1eeeb3
-      internalID: -1855841566
+      spriteID: d78929d458ef8344e9e7858989038b45
+      internalID: -1524283374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_63
+      name: spriteshadowless_21
       rect:
         serializedVersion: 2
-        x: 48
+        x: 90
         y: 0
-        width: 16
-        height: 16
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,20 +565,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8ca8b934f5ebf743b4be7126ce8e6e0
-      internalID: 1659569092
+      spriteID: 590bad812ac89e449b8aad4156f32140
+      internalID: 476449843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_64
+      name: spriteshadowless_22
       rect:
         serializedVersion: 2
-        x: 64
+        x: 120
         y: 0
-        width: 16
-        height: 16
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,20 +586,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fe8ccf2bd845d944abec7d6dc742bc8
-      internalID: -1400702004
+      spriteID: 26e333e4e4ed02c4abab41d56dfd5ef7
+      internalID: 1911559888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pumpkinhead-alpha_65
+      name: spriteshadowless_23
       rect:
         serializedVersion: 2
-        x: 80
+        x: 150
         y: 0
-        width: 16
-        height: 16
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,8 +607,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94df2c135e714c24d8751421e1f5bc10
-      internalID: 1333114855
+      spriteID: f76504b51f667ed488061d7749785067
+      internalID: 1295649534
       vertices: []
       indices: 
       edges: []
@@ -624,75 +624,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pumpkinhead-alpha_0: -443265186
-      pumpkinhead-alpha_1: -205566255
-      pumpkinhead-alpha_10: 387374263
-      pumpkinhead-alpha_11: 70537625
-      pumpkinhead-alpha_12: 1064065683
-      pumpkinhead-alpha_13: -1310948190
-      pumpkinhead-alpha_14: -1746860962
-      pumpkinhead-alpha_15: -1303767613
-      pumpkinhead-alpha_16: 1520345350
-      pumpkinhead-alpha_17: -46064841
-      pumpkinhead-alpha_18: -1715287059
-      pumpkinhead-alpha_19: -283388179
-      pumpkinhead-alpha_2: 704779126
-      pumpkinhead-alpha_20: 916153259
-      pumpkinhead-alpha_21: 1455806666
-      pumpkinhead-alpha_22: 1656143229
-      pumpkinhead-alpha_23: -515571718
-      pumpkinhead-alpha_24: 322860564
-      pumpkinhead-alpha_25: 531720749
-      pumpkinhead-alpha_26: 1014199955
-      pumpkinhead-alpha_27: 184825247
-      pumpkinhead-alpha_28: 1934032061
-      pumpkinhead-alpha_29: -743251094
-      pumpkinhead-alpha_3: 749759007
-      pumpkinhead-alpha_30: 2105279705
-      pumpkinhead-alpha_31: 1450952350
-      pumpkinhead-alpha_32: 2045903526
-      pumpkinhead-alpha_33: 284131154
-      pumpkinhead-alpha_34: -48491822
-      pumpkinhead-alpha_35: -1818494701
-      pumpkinhead-alpha_36: -666864461
-      pumpkinhead-alpha_37: -1627562750
-      pumpkinhead-alpha_38: 1095659125
-      pumpkinhead-alpha_39: -829972135
-      pumpkinhead-alpha_4: 398311698
-      pumpkinhead-alpha_40: 729077478
-      pumpkinhead-alpha_41: 243101959
-      pumpkinhead-alpha_42: -801634945
-      pumpkinhead-alpha_43: -2027185263
-      pumpkinhead-alpha_44: 629039602
-      pumpkinhead-alpha_45: -491387238
-      pumpkinhead-alpha_46: 1070146827
-      pumpkinhead-alpha_47: -145801370
-      pumpkinhead-alpha_48: 1662523642
-      pumpkinhead-alpha_49: -37474022
-      pumpkinhead-alpha_5: 27270159
-      pumpkinhead-alpha_50: 445513492
-      pumpkinhead-alpha_51: 710224658
-      pumpkinhead-alpha_52: -2093565465
-      pumpkinhead-alpha_53: 162543034
-      pumpkinhead-alpha_54: -535298866
-      pumpkinhead-alpha_55: 1490903603
-      pumpkinhead-alpha_56: 1796243755
-      pumpkinhead-alpha_57: -563920935
-      pumpkinhead-alpha_58: -778832906
-      pumpkinhead-alpha_59: -137468558
-      pumpkinhead-alpha_6: -1883599821
-      pumpkinhead-alpha_60: -1632517888
-      pumpkinhead-alpha_61: -1435840740
-      pumpkinhead-alpha_62: -1855841566
-      pumpkinhead-alpha_63: 1659569092
-      pumpkinhead-alpha_64: -1400702004
-      pumpkinhead-alpha_65: 1333114855
-      pumpkinhead-alpha_66: 1011692671
-      pumpkinhead-alpha_67: -33762718
-      pumpkinhead-alpha_68: 2048055894
-      pumpkinhead-alpha_7: -1333756489
-      pumpkinhead-alpha_8: -233779740
-      pumpkinhead-alpha_9: 450480638
+      spriteshadowless_0: -684701131
+      spriteshadowless_1: 2065334207
+      spriteshadowless_10: 1105652886
+      spriteshadowless_11: -1672847632
+      spriteshadowless_12: -2089996188
+      spriteshadowless_13: 230101269
+      spriteshadowless_14: 196848866
+      spriteshadowless_15: -1435543303
+      spriteshadowless_16: -1283623203
+      spriteshadowless_17: -1533833827
+      spriteshadowless_18: 1689977808
+      spriteshadowless_19: -2003481052
+      spriteshadowless_2: -58313390
+      spriteshadowless_20: -1524283374
+      spriteshadowless_21: 476449843
+      spriteshadowless_22: 1911559888
+      spriteshadowless_23: 1295649534
+      spriteshadowless_3: -785716238
+      spriteshadowless_4: -208041425
+      spriteshadowless_5: -29707780
+      spriteshadowless_6: -441556653
+      spriteshadowless_7: -1634202091
+      spriteshadowless_8: 1262746877
+      spriteshadowless_9: -1818818686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
